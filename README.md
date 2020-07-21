@@ -10,3 +10,9 @@ Email- shreya.oak@spit.ac.in
 Name- Rohit Jain
 
 Email- rohitrocks2801@gmail.com
+
+
+# Team Member 3:
+Name- Khushbu Hasija
+
+Email- hasijakhushbu@gmail.com
