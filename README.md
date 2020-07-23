@@ -27,3 +27,9 @@ Email - 2017.nikesh.suthar@ves.ac.in
 Name- Diksha Singhania
 
 Email- dikshasinghania1218@gmail.com
+
+## Team Member 6:
+Name- Varun V
+
+Email- varun.vazhapully@gmail.com
+
