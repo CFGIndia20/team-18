@@ -101,10 +101,12 @@ End Fixed Navigation
                     $hour = $_POST['hour'];
                     $nop = $_POST['nop'];
                     $img = $_POST['img'];
+                    $pname = $_GET['pname'];
 
-                    $query = "INSERT INTO trackproduct(productName, dates, hour, productsMade, imageURL, mobile) VALUES('papad', '{$date}', {$hour}, {$nop}, {$img}, {$_SESSION['id']})";
+                    $query = "INSERT INTO trackproduct(productName, dates, hour, productsMade, imageURL, mobile) VALUES('{$pname}', '{$date}', {$hour}, {$nop}, '{$img}', {$_SESSION['id']})";
                     $create_user_query = mysqli_query($connection, $query);
-                    header("Location: ./task.php");
+                    // header("Location: ../task/task.php");
+                    echo '<script>window.location.replace("./task.php");</script>';
                 }
             }
           ?>
@@ -120,10 +122,11 @@ End Fixed Navigation
                   <script>
                       $('#datepicker').datepicker({
                           uiLibrary: 'bootstrap4'
+                          // dateFormat: "yyyy-mm-dd"
                       });
                     </script>
                 </div>
-                <h5>Record number of hours worked</h5>
+                <h5 class="mt-3">Record number of hours worked</h5>
                 <input type="range" min="1" max="10" step='1' value="1" class="slider" id="myRange" name="hour">
                 <p>Hours worked: <span id="demo"></span></p>
               </div>
@@ -143,16 +146,13 @@ End Fixed Navigation
 
               <div>
                 <h5>Send your progress</h5>
-                <button type="button" id="custom-button2" name="submit">Submit progress</button>
+                <button type="submit" id="custom-button2" name="submit">Submit progress</button>
               </div>
           </form>
 
 
 
           </div>
-                    
-         
-
 
           <script>
           var slider = document.getElementById("myRange");
@@ -166,7 +166,7 @@ End Fixed Navigation
        
 
           <script>
-                        const realFileBtn = document.getElementById("real-file");
+            const realFileBtn = document.getElementById("real-file");
             const customBtn = document.getElementById("custom-button");
             const customTxt = document.getElementById("custom-text");
 
