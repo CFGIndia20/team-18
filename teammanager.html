@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamManager</title>
+    <style>
+        #assign,#unassign,#check{
+            cursor:pointer;
+            width:30%;
+            background-color:blue;
+            color:white;
+            font-family: Arial, Helvetica, sans-serif;
+            padding:10px;
+            text-align: center;
+        }  
+        table{
+            font-size: 20px;
+        }      
+        th,td,tr{
+            border:2px grey solid;
+            padding:10px;
+            margin:10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="assign" onclick="page()">Assign Products </h1>
+    <h1 id="unassign" onclick="pageload()">Unassign Products </h1>
+    <h1 id="check" onclick="cool()"> Quality Check </h1>
+    <div id="display"></div>
+    <div id="worker"></div>
+
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+    function cool() {
+        window.open("qualityInspection.html");
+    }
+    function page(){
+            $.ajax({
+                url:"assign.php",
+                type:"GET",
+                success:function(data){
+                    $("#display").html(data);
+                    console.log(data);
+                }
+            });
+        }
+        function pageload(){
+            $.ajax({
+                url:"unassign.php",
+                type:"GET",
+                success:function(data){
+                    $("#display").html(data);
+                    console.log(data);
+                }
+            });
+        }
+        var Product="",resor="",dead="",store;
+        $(document).on("click",".assign",function(){
+            //$(this).fadeOut();
+            $(this).css("background-color","blue");
+            $(this).css("color","white");
+            store = $(this);
+            console.log("hello");
+            var str = $(this).data("id").split("_");
+            Product=str[0];
+            resor = str[1];
+            dead = "10";
+            $.ajax({
+                url:"workers.php",
+                type:"GET",
+                success:function(data){
+                    $("#worker").html(data);
+                    console.log(data);
+                }
+            });
+            
+        })
+        $(document).on("click",".work",function(){
+            var name = $(this).data("id");
+            if(store!="")
+            {store.fadeOut();
+            store="";
+            $(this).fadeOut()}
+            console.log(name);
+            $.ajax({
+                url:"allocate.php",
+                type:"GET",
+                data:{
+                    "name":name,
+                    "product":Product,
+                    "resor":resor,
+                    "date":dead
+                },
+                success:function(params) {
+                    console.log(params);
+                }
+            });
+        });
+
+</script>
