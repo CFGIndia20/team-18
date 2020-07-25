@@ -4,18 +4,12 @@
             include('../includes/header.php');
         ?>
         <title>SignUp</title>
-
-        <style>
-            .dim {
-                width: 70%;
-            }
-        </style>
     </head>
     <body>
         <?php
             include('../includes/navbar.php');
         ?>
-        <div class="container dim mt-5 p-3 shadow-lg bg-white rounded">
+        <div class="container dim mt-5 p-3 shadow-lg bg-white rounded" style="width: 70%">
             <h3 class="text-center mb-4">SignUp</h3>
 
             <?php

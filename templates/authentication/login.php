@@ -3,7 +3,7 @@
         <?php
             include('../includes/header.php');
         ?>
-        <title>SignUp</title>
+        <title>Login</title>
 
         <style>
             .dim {
@@ -38,14 +38,13 @@
 
                             if($db_password == $password){
                                 // including session section
-                                include('../includes/session.php');
+                                // include('../includes/session.php');
                                 set_sess($mobile);
-
-                                header("Location: ../task/task.php");
+                                header("Location: ../task/index-home.php");
                                 // echo '<script>window.location.replace("http://www.w3schools.com");</script>';
                             }
                         }
-                        echo "<h6 class='text-center mb-3' style='color: red'>Incorrect Email or Password!</h6>";
+                        echo "<h6 class='text-center mb-3' style='color: red'>Incorrect Mobile or Password!</h6>";
                     }
                 }
             ?>

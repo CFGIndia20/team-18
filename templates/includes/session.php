@@ -1,4 +1,8 @@
 <?php
+    if(!isset($_SESSION)){
+        session_start();
+    }
+
     function des_sess(){
         // Start the session
         if(!isset($_SESSION)){
