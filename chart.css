@@ -1,0 +1,63 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+}
+
+/* ID SELECTORS */
+#navigation {
+  background-color:#006a71;
+  /* #e3dfc8 */
+  color:orange;
+  /* #523906 */
+  text-align:left;
+}
+
+/* Headings */
+.big-heading {
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 1.5;
+  padding-bottom:2rem;
+  padding-top:2rem;
+  text-align: center;
+}
+
+/* Navigation Bar */
+.navbar {
+  padding: 2rem 0 2rem 0;
+}
+
+.nav-item {
+  padding: 0 18px;
+
+}
+
+.navbar-brand {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 2.3rem;
+}
+
+.nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 100;
+  color:#523906;
+
+}
+
+
+/* CLASS SELECTORS */
+.container-fluid {
+  padding-right:5% ;
+  margin-bottom:7%;
+
+}
+
+#piechart{
+  width: 900px;
+  height: 500px;
+}
+#performance{
+  margin:0 auto 0 auto;
+}
