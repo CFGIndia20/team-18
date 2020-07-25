@@ -11,7 +11,7 @@
                     include('../includes/session.php');
                     if(isset($_SESSION['id'])){
                 ?>
-                        <li class="nav-item dropdown">
+                        <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Tasks
                             </a>
@@ -20,16 +20,18 @@
                                 <a class="dropdown-item" href="#">Ongoing</a>
                                 <a class="dropdown-item" href="#">Completed</a>
                             </div>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="../task/task.php">Tasks</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Compensation</a>
+                            <a class="nav-link" href="../compensation/Efficiency.php">Compensation</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Feedback</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Logout</a>
-                        </li>
+                        <form action="#" method="POST">
+                            <li class="nav-item">
+                                <a class="nav-link" name="logout">Logout</a>
+                            </li>
+                        </form>
                 <?php } ?>
             </ul>
         </div>

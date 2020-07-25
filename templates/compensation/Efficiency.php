@@ -35,28 +35,10 @@
     </head>
     
     <body>
-        <nav class="navbar navbar-inverse navbar-fixed-top" style="overflow-x:hidden;">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>                        
-                        </button>
-                        <a class="navbar-brand" href="#"> Umeed </a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="myNavbar">
-                        <ul class="nav navbar-nav navbar-right"> 
-                            
-                            <li style="display:inline;"><a href="#"><span class="glyphicon glyphicon-user"></span> Task </a></li>
-                            <li style="display:inline;"><a href="#"><span class="glyphicon glyphicon-user"></span> Learning</a></li> 
-                            <li style="display:inline;"><a href="#"><span class="glyphicon glyphicon-user"></span> Efficiency </a></li>    
-                            <li style="display:inline;"><a href="#" ><span class="glyphicon glyphicon-log-in" ></span> Logout</a></li>             
-                    </ul>                               
-                
-                    </div>
-                </div>
-            </nav>
+        <?php
+            include('../includes/navbar.php');
+        ?>
+        
         <br>
         <br>
         <br>
