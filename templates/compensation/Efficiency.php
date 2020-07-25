@@ -44,93 +44,81 @@
         <br>
         <br>
         
-        
-    <center>
-        <div class = "divData" id = "divData" style="height: 500px;width: 1000px;">
-            <br>
-            <br>
-            <div align="left">
-                <center><h3>Task-1</h3></center>
-                <h4 style="margin-left: 50px;">Efficiency Calculated:- 90%</h4>
-                <div class="progress" style="width:50%;margin-left: 50px;">
-                    
-                    <div class="progress-bar progress-bar-striped active" role="progressbar"
-                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:90%">
-                      90% Effective
-                    </div>
+        <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                <div align="left">
+                    <center><h3>Task-1</h3></center>
+                    <h4 style="margin-left: 50px;">Efficiency Calculated:- 90%</h4>
+                    <div class="progress" style="width:80%;margin-left: 50px;">
+                        
+                        <div class="progress-bar progress-bar-striped active" role="progressbar"
+                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                          90% Effective
+                        </div>
+                  </div>
+                  <hr style="height:10px;color:'black';">              
+                </div>
               </div>
-              <hr style="height:10px;color:'black';">              
-            </div>
-            
-            <div align="left">
-                <center><h3>Task-2</h3></center>
-                <h4 style="margin-left: 50px;">Efficiency Calculated:- 50%</h4>
-                <div class="progress" style="width:50%;margin-left: 50px;">
-                    
-                    <div class="progress-bar progress-bar-striped active" role="progressbar"
-                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
-                      50% Effective
-                    </div>
+              <div class="col-sm">
+                <div align="left">
+                    <center><h3>Task-2</h3></center>
+                    <h4 style="margin-left: 50px;">Efficiency Calculated:- 50%</h4>
+                    <div class="progress" style="width:80%;margin-left: 50px;">
+                        
+                        <div class="progress-bar progress-bar-striped active" role="progressbar"
+                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                          50% Effective
+                        </div>
+                  </div>
+                  <hr style="height:10px;color:'black';">              
+                </div>
               </div>
-              <hr style="height:10px;color:'black';">              
-            </div>
-            
-            <div align="left">
-                <center><h3>Task-3</h3></center>
-                <h4 style="margin-left: 50px;">Efficiency Calculated:- 80%</h4>
-                <div class="progress" style="width:50%;margin-left: 50px;">
+              <div class="col-sm">
+                <div align="left">
+                    <center><h3>Task-3</h3></center>
+                    <h4 style="margin-left: 50px;">Efficiency Calculated:- 80%</h4>
+                    <div class="progress" style="width:80%;margin-left: 50px;">
+                        
+                        <div class="progress-bar progress-bar-striped active" role="progressbar"
+                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                          80% Effective
+                        </div>
+                  </div>
+                  <hr style="height:10px;color:'black';">              
+                </div>
+                <br/>
+                <div class="col-sm">
+                    <div align="center">
+                        <center><h3>Overall Rating</h3></center>
+                        <span class="fa fa-star checked fa-3x"></span>
+                        <span class="fa fa-star checked fa-3x"></span>
+                        <span class="fa fa-star checked fa-3x"></span>
+                        <span class="fa fa-star fa-3x"></span>
+                        <span class="fa fa-star fa-3x"></span>
+                        
                     
-                    <div class="progress-bar progress-bar-striped active" role="progressbar"
-                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                      80% Effective
                     </div>
+
+                </div>
+                <br/>
+           
+                <div class="col-sm">
+                    <div align="center">
+                        <center><h3>Compensation Amount</h3></center>
+                        <center> <h1>Rs 1000</h1></center>
+                        
+                    
+                    </div>
+                </div>
               </div>
-              <hr style="height:10px;color:'black';">              
             </div>
-            
-        </div>
-        <hr style="heigth:10px;width:80%;border: 1px solid black;">
-        
-        <div class = "divData" id = "divData" style="width: 1000px;">
-            <br>
-            <div align="center">
-                <center><h3>Overall Rating</h3></center>
-                <span class="fa fa-star checked fa-3x"></span>
-                <span class="fa fa-star checked fa-3x"></span>
-                <span class="fa fa-star checked fa-3x"></span>
-                <span class="fa fa-star fa-3x"></span>
-                <span class="fa fa-star fa-3x"></span>
-                
-            
-            </div>
-            <br>
-        </div>
-        <hr style="heigth:10px;width:80%;border: 1px solid black;">
-        
-        <div class = "divData" id = "divData" style="width: 1000px;">
-            <br>
-            <div align="center">
-                <center><h3>Compensation Received</h3></center>
-                <center> <h1>Rs 1000</h1></center>
-                
-            
-            </div>
-            <br>
-        </div>
-        <hr style="heigth:10px;width:80%;border: 1px solid black;">
-        
-        <br>
-        <br>
+          </div>
+  
         
         
         
         
-        
-        
-        
-    </center>
-        
-    
         
     </body>
 </html>
