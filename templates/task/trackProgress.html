@@ -22,6 +22,10 @@
   <!-- CSS
   ================================================== -->
   <!-- Themefisher Icon font -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+  <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="../plugins/themefisher-font/style.css">
   <!-- bootstrap.min css -->
   <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
@@ -38,25 +42,7 @@
 
 <body id="body">
 
- <!--
-  Start Preloader
-  ==================================== -->
-  <div id="preloader">
-    <div class='preloader'>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </div> 
-  <!--
-  End Preloader
-  ==================================== -->
-
-
-   
+  
 
 <!--
 Fixed Navigation
@@ -105,6 +91,17 @@ End Fixed Navigation
 
           <div id="trackProgress">
             <div class="slidecontainer">
+              <h5>
+                Select date
+              </h5>
+              <div>
+                <input id="datepicker" width="276" />
+                <script>
+                    $('#datepicker').datepicker({
+                        uiLibrary: 'bootstrap4'
+                    });
+                  </script>
+              </div>
               <h5>Record number of hours worked</h5>
               <input type="range" min="1" max="10" step='1' value="1" class="slider" id="myRange">
               <p>Hours worked: <span id="demo"></span></p>
