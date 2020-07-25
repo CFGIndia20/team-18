@@ -1,3 +1,10 @@
+<?php
+    include('../includes/session.php');
+    if(isset($_GET['logout']) && $_GET['logout']==1){
+        des_sess();
+    }
+?>
+
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #850456;">
     <div class="container">
         <a class="navbar-brand" href="#">Umeed</a>
@@ -5,6 +12,10 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
+        <?php
+            include('../../translate-tel-urd.php');
+        ?>
+        
         <div class="collapse navbar-collapse" id="navbarSupportedContent" style="flex-grow: 0">
             <ul class="navbar-nav mr-auto">
                 <?php
