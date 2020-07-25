@@ -66,6 +66,17 @@ Fixed Navigation
 			<article class="col-md-4 col-sm-6 col-xs-12 clearfix ">
 				<div class="post-item">
 					<div class="media-wrapper">
+            <div>
+              <?php
+                $txt='ఇది ఒక
+                పూర్తి చేయాల్సిన పని పెండింగ్‌లో ఉంది. దయచేసి YouTube వీడియోను చూడండి మరియు వెబ్‌సైట్‌ను ఎలా ఉపయోగించాలో తెలుసుకోండి. దయచేసి మీ హోంవర్క్‌ను వెబ్‌సైట్‌లో అప్‌లోడ్ చేయండి.';
+                $txt=htmlspecialchars($txt);
+                $txt=rawurlencode($txt);
+                $html=file_get_contents('https://translate.google.com/translate_tts?ie=UTF-8&client=gtx&q='.$txt.'&tl=te-IN');
+                $player="<audio controls='controls' autoplay><source src='data:audio/mpeg;base64,".base64_encode($html)."'></audio>";
+                echo $player;
+              ?>
+            </div>
 						<img src="../images/task3.jpg" alt="amazing caves coverimage" class="img-fluid">
 					</div>
 
@@ -83,6 +94,17 @@ Fixed Navigation
 			<article class="col-md-4 col-sm-6 col-xs-12 ">
 				<div class="post-item">
 					<div class="media-wrapper">
+          <div>
+              <?php
+                $txt='ఇది ఒక
+                పూర్తి చేయాల్సిన పని పెండింగ్‌లో ఉంది. దయచేసి YouTube వీడియోను చూడండి మరియు వెబ్‌సైట్‌ను ఎలా ఉపయోగించాలో తెలుసుకోండి. దయచేసి మీ హోంవర్క్‌ను వెబ్‌సైట్‌లో అప్‌లోడ్ చేయండి.';
+                $txt=htmlspecialchars($txt);
+                $txt=rawurlencode($txt);
+                $html=file_get_contents('https://translate.google.com/translate_tts?ie=UTF-8&client=gtx&q='.$txt.'&tl=te-IN');
+                $player="<audio controls='controls' autoplay><source src='data:audio/mpeg;base64,".base64_encode($html)."'></audio>";
+                echo $player;
+              ?>
+            </div>
 						<img src="../images/task2.jpg" alt="amazing caves coverimage" class="img-fluid">
 					</div>
 
@@ -100,6 +122,17 @@ Fixed Navigation
 			<article class="col-md-4 col-sm-6 col-xs-12 ">
 				<div class="post-item">
 					<div class="media-wrapper">
+          <div>
+              <?php
+                $txt='ఇది ఒక
+                పూర్తి చేయాల్సిన పని పెండింగ్‌లో ఉంది. దయచేసి YouTube వీడియోను చూడండి మరియు వెబ్‌సైట్‌ను ఎలా ఉపయోగించాలో తెలుసుకోండి. దయచేసి మీ హోంవర్క్‌ను వెబ్‌సైట్‌లో అప్‌లోడ్ చేయండి.';
+                $txt=htmlspecialchars($txt);
+                $txt=rawurlencode($txt);
+                $html=file_get_contents('https://translate.google.com/translate_tts?ie=UTF-8&client=gtx&q='.$txt.'&tl=te-IN');
+                $player="<audio controls='controls' autoplay><source src='data:audio/mpeg;base64,".base64_encode($html)."'></audio>";
+                echo $player;
+              ?>
+            </div>
 						<img src="../images/task3.jpg" alt="amazing caves coverimage" class="img-fluid">
 					</div>
 

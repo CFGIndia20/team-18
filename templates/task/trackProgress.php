@@ -5,12 +5,10 @@
 <!--[if gt IE 8]><!--> 
 <html> <!--<![endif]-->
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="description" content="Bingo One page parallax responsive HTML Template ">
-  
-  <meta name="author" content="Themefisher.com">
-
-  <title>Bingo | Responsive Multipurpose Parallax HTML5 Template</title>
+  <?php
+      include('../includes/header.php');
+  ?>
+  <title>Track Progress</title>
 
 <!-- Mobile Specific Meta
   ================================================== -->
@@ -47,9 +45,13 @@
 <!--
 Fixed Navigation
 ==================================== -->
-<header class="navigation fixed-top">
+<!-- <header class="navigation fixed-top">
  
-</header>
+</header> -->
+<?php
+  include('../includes/navbar.php');
+?>
+
 <!--
 End Fixed Navigation
 ==================================== -->
@@ -89,37 +91,61 @@ End Fixed Navigation
               <button type="submit" value="send" class="btn btn-primary">send Message</button>
             </form> -->
 
-          <div id="trackProgress">
-            <div class="slidecontainer">
-              <h5>
-                Select date
-              </h5>
-              <div>
-                <input id="datepicker" width="276" />
-                <script>
-                    $('#datepicker').datepicker({
-                        uiLibrary: 'bootstrap4'
-                    });
-                  </script>
+          <?php
+            include('../includes/db.php');
+            if($connection){
+                // for sign-in
+                if(isset($_POST['submit'])){
+
+                    $date = $_POST['date'];
+                    $hour = $_POST['hour'];
+                    $nop = $_POST['nop'];
+                    $img = $_POST['img'];
+
+                    $query = "INSERT INTO trackproduct(productName, dates, hour, productsMade, imageURL, mobile) VALUES('papad', '{$date}', {$hour}, {$nop}, {$img}, {$_SESSION['id']})";
+                    $create_user_query = mysqli_query($connection, $query);
+                    header("Location: ./task.php");
+                }
+            }
+          ?>
+
+          <form action="#" method="POST">
+            <div id="trackProgress">
+              <div class="slidecontainer">
+                <h5>
+                  Select date
+                </h5>
+                <div>
+                  <input id="datepicker" name="date" width="276" />
+                  <script>
+                      $('#datepicker').datepicker({
+                          uiLibrary: 'bootstrap4'
+                      });
+                    </script>
+                </div>
+                <h5>Record number of hours worked</h5>
+                <input type="range" min="1" max="10" step='1' value="1" class="slider" id="myRange" name="hour">
+                <p>Hours worked: <span id="demo"></span></p>
               </div>
-              <h5>Record number of hours worked</h5>
-              <input type="range" min="1" max="10" step='1' value="1" class="slider" id="myRange">
-              <p>Hours worked: <span id="demo"></span></p>
-            </div>
 
-            <div>
-              <h5>Add an image of your work</h5>
-              <input type="file" id="real-file" hidden="hidden" />
-              <button type="button" id="custom-button">Choose your work</button>
-              <span id="custom-text">No file chosen, yet.</span>
-            </div>
-  <br/><br/>
-            <div>
-             
-              <h5>Send your progress</h5>
-              <button type="button" id="custom-button2">Submit progress</button>
-            </div>
+              <div class="mb-4">
+                <h5>No of products made</h5>
+                <input type="number" name="nop" required />
+              </div>
 
+              <div>
+                <h5>Add an image of your work</h5>
+                <input type="file" id="real-file" hidden="hidden" name="img"/>
+                <button type="button" id="custom-button">Choose your work</button>
+                <span id="custom-text">No file chosen, yet.</span>
+              </div>
+              <br/><br/>
+
+              <div>
+                <h5>Send your progress</h5>
+                <button type="button" id="custom-button2" name="submit">Submit progress</button>
+              </div>
+          </form>
 
 
 
