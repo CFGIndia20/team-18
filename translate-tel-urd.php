@@ -27,15 +27,16 @@
 
 <!--A bar for translate feature -->
 <!--IMplement this BELOW the navbar. If you include it with normal navbar it will come into the dropdown and BECOME HIDDEN!!!!-->
-<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #e3f2fd;">
-    <div class="container">
-    <ul class="navbar-nav ml-auto">
-    <li class="nav-item">
-                    <select id = "language">
-                    <option value = "en" >English</option>
-                    <option value = "te">Telegu</option>
-                    <option value = "ur">Urdu</option>
-                    </select><button onclick="changeLanguageByButtonClick()">Translate</button>
-                </li>
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #e3f2fd;">
+    <div class="container"> -->
+    <ul class="navbar-nav">
+      <li class="nav-item pb-0 pt-2">
+        <select id = "language">
+          <option value = "en" >English</option>
+          <option value = "te">Telegu</option>
+          <option value = "ur">Urdu</option>
+        </select>
+        <a class="btn pl-0 pt-0" onclick="changeLanguageByButtonClick()">Translate</a>
+      </li>
     </ul>
-</nav>
+<!-- </nav> -->
