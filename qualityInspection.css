@@ -1,0 +1,124 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+}
+
+/* ID SELECTORS */
+#navigation {
+  background-color:#006a71;
+  /* #e3dfc8 */
+  color:orange;
+  /* #523906 */
+  text-align:left;
+}
+
+/* Headings */
+.big-heading {
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 1.5;
+  padding-bottom:2rem;
+  padding-top:2rem;
+  text-align: center;
+}
+
+/* Navigation Bar */
+.navbar {
+  padding: 0 0 4rem 0;
+}
+
+.nav-item {
+  padding: 0 18px;
+
+}
+
+.navbar-brand {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 2.3rem;
+}
+
+.nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 100;
+  color:#523906;
+
+}
+
+.download-button {
+  margin:0 2% 5%;
+}
+
+
+#project-section{
+  margin: 5rem;
+}
+
+.section-title{
+  font-weight: 600;
+  font-size: 2rem;
+  font-family: 'Barlow', sans-serif;
+
+}
+.row-styling{
+  padding: 2rem 5rem 2rem;
+}
+
+.exsisting-projects{
+  text-align:center;
+}
+.row-styling-active{
+  background-color: #f0ece3;
+}
+#memberSelection{
+  text-align:center;
+}
+
+
+/* collapsible section */
+h2{}
+.collapsible {
+  background-color:white;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 80%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #f0ece3;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  width:80%;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+  margin:0 auto;
+}
+.row{
+  padding-bottom: 5rem;
+}
+.tracking{
+  padding-top:6%;
+  padding-bottom:3%;
+}
+.data-content{
+  margin-top:2%;
+}
+
+.data-content{
+  font-weight: 600;
+  font-family: 'Barlow', sans-serif;
+}
+.decision
+{
+  text-align:center;
+}
