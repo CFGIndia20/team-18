@@ -23,16 +23,15 @@
             <div class="col-12">
                 <div class="card">
 
-                    <div class="card-body">
+
+                <div class="card-body">
                         <div class="card-title mb-4">
                             <div class="d-flex justify-content-start">
                                 
                                 <div class="userData ml-3">
-                                    <h2 class="d-block" style="font-size: 1.5rem; font-weight: bold"><a href="javascript:void(0);">User Name/Phone number</a></h2>
+                                    <h2 class="d-block" style="font-size: 1.5rem; font-weight: bold"><a href="javascript:void(0);">Number of hours I am available</a></h2>
 
-                                <div class="ml-auto">
-                                    <input type="button" class="btn btn-primary d-none" id="btnDiscard" value="Discard Changes" />
-                                </div>
+                                
                             </div>
                         </div>
 
@@ -42,73 +41,50 @@
                                     <li class="nav-item">
                                         <a class="nav-link active" id="basicInfo-tab" data-toggle="tab" href="#basicInfo" role="tab" aria-controls="basicInfo" aria-selected="true">Basic Info</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" id="connectedServices-tab" data-toggle="tab" href="#connectedServices" role="tab" aria-controls="connectedServices" aria-selected="false">~Can connect tasks done here</a>
-                                    </li>
+        
                                 </ul>
                                 <div class="tab-content ml-1" id="myTabContent">
                                     <div class="tab-pane fade show active" id="basicInfo" role="tabpanel" aria-labelledby="basicInfo-tab">
                                         
 
-                                        <div class="row">
-                                            <div class="col-sm-3 col-md-2 col-5">
-                                                <label style="font-weight:bold;">Full Name</label>
-                                            </div>
-                                            <div class="col-md-8 col-6">
-                                                YOUR NAME HERE
-                                            </div>
-                                        </div>
-                                        <hr />
-
-                                        <div class="row">
-                                            <div class="col-sm-3 col-md-2 col-5">
-                                                <label style="font-weight:bold;">Birth Date</label>
-                                            </div>
-                                            <div class="col-md-8 col-6">
-                                                YOUR BIRTH DATE
-                                            </div>
-                                        </div>
-                                        <hr />
-                                        
-                                        
-                                        <div class="row">
-                                            <div class="col-sm-3 col-md-2 col-5">
-                                                <label style="font-weight:bold;">Number of Hours I am available</label>
-                                            </div>
-                                            <div class="col-md-8 col-6">
-                                                -- hours
-                                            </div>
-                                        </div>
-                                        <hr />
-                                        <div class="row">
-                                            <div class="col-sm-3 col-md-2 col-5">
-                                                <label style="font-weight:bold;">My efficiency rate</label>
-                                            </div>
-                                            <div class="col-md-8 col-6">
-                                                --%
-                                            </div>
-                                        </div>
-                                        <hr />
-                                        <div class="row">
-                                            <div class="col-sm-3 col-md-2 col-5">
-                                                <label style="font-weight:bold;">Something more</label>
-                                            </div>
-                                            <div class="col-md-8 col-6">
-                                                Something
-                                            </div>
-                                        </div>
-                                        <hr />
+                                    <div class="form-group">
+                                            <label for="usr">Full name:</label>
+                                            <input type="text" class="form-control" id="usr">
+                                    </div>
+                                    <hr />
+                                    <div class="form-group">
+                                            <label for="pwd">Birthdate:</label><br />
+                                            <label for="date">Date</label>
+                                                <input type="text" id="date" name="date" />
+                                                <label for="month">Month</label>
+                                                <input type="text" id="month" name="month" />
+                                                <label for="year">Year</label>
+                                                <input type="text" id="year" name="year" />
+                                    </div>
+                                    <hr />
+                                    <div class="form-group">
+                                        <label for="comment">Address:</label>
+                                         <textarea class="form-control" rows="5" id="comment"></textarea>
+                                    </div>
+                                    <hr />
+                                    <div class="form-group">
+                                        <label for="comment">Number of hours I am available:</label>
+                                    <input type="number" id="quantity" name="quantity" min="1" max="20">
+                                    </div>
+                                    <button type="button" class="btn btn-primary">Submit data</button>
 
                                     </div>
-                                    <div class="tab-pane fade" id="connectedServices" role="tabpanel" aria-labelledby="ConnectedServices-tab">
-                                        Maybe add the tasks page here? 
-                                    </div>
+                                    
+
+                                    
+
                                 </div>
                             </div>
                         </div>
 
 
                     </div>
+<!--Card body ends here-->
 
                 </div>
             </div>
