@@ -102,6 +102,41 @@ Fixed Navigation
                                </script>
                         
                             </div>
+                            <br/>
+                            <div>
+                                <div>
+                                    <input type="file" id="real-file" hidden="hidden" />
+                                    <button type="button" id="custom-button">Select your homework</button>
+                                    <span >No file
+                                </div>
+                                <br/>
+                                <div>
+                                    <button type="button" id="custom-button2">Submit homework</button>
+                                </div>
+                            </div>
+                          
+                            
+                                    <script>
+                                        const realFileBtn = document.getElementById("real-file");
+                            const customBtn = document.getElementById("custom-button");
+                            const customTxt = document.getElementById("custom-text");
+
+                            customBtn.addEventListener("click", function() {
+                            realFileBtn.click();
+                            });
+
+                            realFileBtn.addEventListener("change", function() {
+                            if (realFileBtn.value) {
+                                customTxt.innerHTML = realFileBtn.value.match(
+                                /[\/\\]([\w\d\s\.\-\(\)]+)$/
+                                )[1];
+                            } else {
+                                customTxt.innerHTML = "No file chosen, yet.";
+                            }
+                            });
+
+                            </script>
+                               
                           </div>
                       
 
@@ -148,6 +183,41 @@ Fixed Navigation
                                </script>
                         
                             </div>
+                            <br/>
+                            <div>
+                                <div>
+                                    <input type="file" id="real-file" hidden="hidden" />
+                                    <button type="button" id="custom-button">Select your homework</button>
+                                    <span >No file
+                                </div>
+                                <br/>
+                                <div>
+                                    <button type="button" id="custom-button2">Submit homework</button>
+                                </div>
+                            </div>
+                          
+                            
+                                    <script>
+                                        const realFileBtn = document.getElementById("real-file");
+                            const customBtn = document.getElementById("custom-button");
+                            const customTxt = document.getElementById("custom-text");
+
+                            customBtn.addEventListener("click", function() {
+                            realFileBtn.click();
+                            });
+
+                            realFileBtn.addEventListener("change", function() {
+                            if (realFileBtn.value) {
+                                customTxt.innerHTML = realFileBtn.value.match(
+                                /[\/\\]([\w\d\s\.\-\(\)]+)$/
+                                )[1];
+                            } else {
+                                customTxt.innerHTML = "No file chosen, yet.";
+                            }
+                            });
+
+                            </script>
+                               
                           </div>
                       
 
@@ -194,6 +264,41 @@ Fixed Navigation
                                </script>
                         
                             </div>
+                            <br/>
+                            <div>
+                                <div>
+                                    <input type="file" id="real-file" hidden="hidden" />
+                                    <button type="button" id="custom-button">Select your homework</button>
+                                    <span >No file
+                                </div>
+                                <br/>
+                                <div>
+                                    <button type="button" id="custom-button2">Submit homework</button>
+                                </div>
+                            </div>
+                          
+                            
+                                    <script>
+                                        const realFileBtn = document.getElementById("real-file");
+                            const customBtn = document.getElementById("custom-button");
+                            const customTxt = document.getElementById("custom-text");
+
+                            customBtn.addEventListener("click", function() {
+                            realFileBtn.click();
+                            });
+
+                            realFileBtn.addEventListener("change", function() {
+                            if (realFileBtn.value) {
+                                customTxt.innerHTML = realFileBtn.value.match(
+                                /[\/\\]([\w\d\s\.\-\(\)]+)$/
+                                )[1];
+                            } else {
+                                customTxt.innerHTML = "No file chosen, yet.";
+                            }
+                            });
+
+                            </script>
+                               
                           </div>
                       
 
