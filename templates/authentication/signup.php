@@ -78,7 +78,7 @@
         <h4 class="text-center mb-4">Click on video below</h4>
         <!-- 16:9 aspect ratio -->
         <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qN3OueBm9F4" allowfullscreen></iframe>
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6ixabKv7WzI" allowfullscreen></iframe>
         </div>
         <?php
             include('../includes/footer.php');
