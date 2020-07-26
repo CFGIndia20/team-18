@@ -149,11 +149,15 @@ Fixed Navigation
                                 </div>
                                 <br/>
                                 <div>
-                                    <button type="button" id="custom-button2">Submit homework</button>
+                                    <button onClick="alert()" type="button" id="custom-button2">Submit homework</button>
                                 </div>
                             </div>
-                          
-                            
+                            <script>
+                                      function alert() {
+                            alert("Submitted homework!");
+                          }
+                          </script>
+                                            
                                     <script>
                                         const realFileBtn = document.getElementById("real-file");
                             const customBtn = document.getElementById("custom-button");

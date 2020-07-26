@@ -131,11 +131,6 @@ End Fixed Navigation
                 <p>Hours worked: <span id="demo"></span></p>
               </div>
 
-              <div class="mb-4">
-                <h5>No of products made</h5>
-                <input type="number" name="nop" required />
-              </div>
-
               <div>
                 <h5>Add an image of your work</h5>
                 <input type="file" id="real-file" hidden="hidden" name="img"/>
@@ -146,14 +141,18 @@ End Fixed Navigation
 
               <div>
                 <h5>Send your progress</h5>
-                <button type="submit" id="custom-button2" name="submit">Submit progress</button>
+                <button onClick="alert()" type="submit" id="custom-button2" name="submit">Submit progress</button>
               </div>
           </form>
 
 
 
           </div>
-
+          <script>
+                      function alert() {
+            alert("Submitted!");
+          }
+          </script>
           <script>
           var slider = document.getElementById("myRange");
           var output = document.getElementById("demo");
