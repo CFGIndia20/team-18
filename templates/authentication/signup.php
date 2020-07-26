@@ -9,6 +9,9 @@
         <?php
             include('../includes/navbar.php');
         ?>
+        <div id="imgwrapper">
+            <img src="../images/0.jpeg" alt="Umeed" width="100%" />
+        </div>
         <div class="container dim mt-5 p-3 shadow-lg bg-white rounded" style="width: 70%">
             <h3 class="text-center mb-4">SignUp</h3>
 
@@ -66,7 +69,17 @@
             </form>
             <label>Have an account? <a href="./login.php">Login</a></label>
         </div>
-
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <h3 class="text-center mb-4">Learn how to navigate the website</h3>
+        <hr />
+        <h4 class="text-center mb-4">Click on video below</h4>
+        <!-- 16:9 aspect ratio -->
+        <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qN3OueBm9F4" allowfullscreen></iframe>
+        </div>
         <?php
             include('../includes/footer.php');
             include('../includes/jscdns.php');
