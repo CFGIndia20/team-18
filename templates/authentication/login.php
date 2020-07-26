@@ -21,7 +21,7 @@
                         $mobile = $_POST['mobile'];
                         $password = $_POST['password'];
 
-                        $query = "SELECT mobile, passwrd position FROM users WHERE mobile = {$mobile}";
+                        $query = "SELECT mobile, passwrd, position FROM users WHERE mobile = {$mobile}";
                         $user_query = mysqli_query($connection, $query);
 
                         if($user_query){
@@ -30,16 +30,20 @@
                             
                             include('../includes/hash.php');
                             $password = secret($_POST['password']);
-
+                            
                             if($db_password == $password){
                                 // including session section
                                 // include('../includes/session.php');
+                                
                                 set_sess($mobile);
-
-                                if($fetch_query['position']){
-                                    header("Location: ../task/task.php");
+                                
+                                if($fetch_query['position'] == 1){
+                                    // header("Location: ../../teammanager.html");
+                                    // echo "<script>window.open('../../teammanager.html')</script>";
+                                    echo '<script>window.location.replace("../../teammanager.html");</script>';
                                 } else {
-                                    header("Location: ../task/task.php");
+                                    // header("Location: ../task/task.php");
+                                    echo '<script>window.location.replace("../task/task.php");</script>';
                                 }
                                 // echo '<script>window.location.replace("http://www.w3schools.com");</script>';
                             }

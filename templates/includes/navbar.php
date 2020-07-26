@@ -38,11 +38,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="../compensation/Efficiency.php">Compensation</a>
                         </li>
-                        <form action="#" method="POST">
-                            <li class="nav-item">
-                                <a class="nav-link" name="logout">Logout</a>
-                            </li>
-                        </form>
+                        <li class="nav-item">
+                            <a href="?logout=1" class="nav-link" name="logout">Logout</a>
+                        </li>
                 <?php } ?>
             </ul>
         </div>
