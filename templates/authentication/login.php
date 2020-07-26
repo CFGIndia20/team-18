@@ -40,7 +40,7 @@
                                 // including session section
                                 // include('../includes/session.php');
                                 set_sess($mobile);
-                                header("Location: ../task/index-home.php");
+                                header("Location: ../task/task.php");
                                 // echo '<script>window.location.replace("http://www.w3schools.com");</script>';
                             }
                         }
