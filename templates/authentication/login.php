@@ -5,17 +5,12 @@
         ?>
         <title>Login</title>
 
-        <style>
-            .dim {
-                width: 70%;
-            }
-        </style>
     </head>
     <body>
         <?php
             include('../includes/navbar.php');
         ?>
-        <div class="container dim mt-5 p-3 shadow-lg bg-white rounded">
+        <div class="container mt-5 p-3 shadow-lg bg-white rounded" style="width: 70%;">
             <h3 class="text-center mb-4">Login</h3>
 
             <?php
@@ -26,7 +21,7 @@
                         $mobile = $_POST['mobile'];
                         $password = $_POST['password'];
 
-                        $query = "SELECT mobile, passwrd FROM users WHERE mobile = {$mobile}";
+                        $query = "SELECT mobile, passwrd position FROM users WHERE mobile = {$mobile}";
                         $user_query = mysqli_query($connection, $query);
 
                         if($user_query){
@@ -40,7 +35,12 @@
                                 // including session section
                                 // include('../includes/session.php');
                                 set_sess($mobile);
-                                header("Location: ../task/index-home.php");
+
+                                if($fetch_query['position']){
+                                    header("Location: ../task/index-home.php");
+                                } else {
+                                    header("Location: ../task/index-home.php");
+                                }
                                 // echo '<script>window.location.replace("http://www.w3schools.com");</script>';
                             }
                         }
