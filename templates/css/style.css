@@ -178,14 +178,14 @@ body {
 #custom-button {
   padding: 10px;
   color: white;
-  background-color: #f0b6eb;
+  background-color: #28ABE3;
   border: 1px solid #000;
   border-radius: 5px;
   cursor: pointer;
 }
 
 #custom-button:hover {
-  background-color: #f375ed;
+  background-color: #92d2fc;
 }
 
 #custom-text {
@@ -196,14 +196,14 @@ body {
 #custom-button2 {
   padding: 10px;
   color: white;
-  background-color: #f0b6eb;
+  background-color: #28ABE3;
   border: 1px solid #000;
   border-radius: 5px;
   cursor: pointer;
 }
 
 #custom-button2:hover {
-  background-color: #f375ed;
+  background-color: #92d2fc;
 }
 
 #custom-text2 {
@@ -216,14 +216,14 @@ body {
   padding: 10px;
   float: right;
   color: white;
-  background-color: #f0b6eb;
+  background-color: #28ABE3;
   border: 1px solid #000;
   border-radius: 5px;
   cursor: pointer;
 }
 
 #custom-button3:hover {
-  background-color: #f375ed;
+  background-color: #92d2fc;
 }
 
 #custom-text3 {
@@ -278,14 +278,14 @@ body {
   appearance: none;
   width: 25px;
   height: 25px;
-  background: 	#f375ed;
+  background: 	#28ABE3;
   cursor: pointer;
 }
 
 .slider::-moz-range-thumb {
   width: 25px;
   height: 25px;
-  background: 	#f375ed;
+  background: 	#28ABE3;
   cursor: pointer;
 }
 
