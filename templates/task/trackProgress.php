@@ -94,19 +94,43 @@ End Fixed Navigation
           <?php
             include('../includes/db.php');
             if($connection){
+                
                 // for sign-in
-                if(isset($_POST['submit'])){
+                if(!isset($_SESSION['id'])){
+                    echo "hey";
+                }
+                if(isset($_POST['submit']) && isset($_SESSION['id'])){
 
                     $date = $_POST['date'];
+                    $newdate = date("Y-m-d",strtotime($date));
                     $hour = $_POST['hour'];
                     $nop = $_POST['nop'];
                     $img = $_POST['img'];
                     $pname = $_GET['pname'];
-
-                    $query = "INSERT INTO trackproduct(productName, dates, hour, productsMade, imageURL, mobile) VALUES('{$pname}', '{$date}', {$hour}, {$nop}, '{$img}', {$_SESSION['id']})";
-                    $create_user_query = mysqli_query($connection, $query);
+                    $query = "select * from trackproduct where productName = '".$pname."' and mobile =".$_SESSION['id'];
+                    echo $query;
+                    $result = mysqli_query($connection,$query);
+                    $i = mysqli_num_rows ( $result );
+                    if(!$i){
+                        $query = "INSERT INTO trackproduct(productName, dates, hour, productsMade, imageURL, mobile) VALUES('{$pname}', '{$newdate}', {$hour}, {$nop}, '{$img}', {$_SESSION['id']})";
+                        echo $query;
+                        $create_user_query = mysqli_query($connection, $query);
+                        
+                    }else{
+                        $fetch_query = mysqli_fetch_array($result); 
+                        $hr = $fetch_query['hour'] + $hour;
+                        $prevProductMade = $fetch_query['productsMade']+$nop;
+                        $query = "update trackproduct set dates= '".$newdate."' , hour =".$hr.",productsMade =".$prevProductMade.",imageUrl ='".$img."' where mobile =".$_SESSION['id']." and productName ='".$pname."'";
+                        echo $query;
+                        $result = mysqli_query($connection,$query);
+                        
+                        
+                    }
+//                    $query = "INSERT INTO trackproduct(productName, dates, hour, productsMade, imageURL, mobile) VALUES('{$pname}', '{$newdate}', {$hour}, {$nop}, '{$img}', {$_SESSION['id']})";
+//                    echo $query;
+//                    $create_user_query = mysqli_query($connection, $query);
                     // header("Location: ../task/task.php");
-                    echo '<script>window.location.replace("./task.php");</script>';
+                   echo '<script>window.location.replace("./task.php");</script>';
                 }
             }
           ?>
@@ -129,6 +153,11 @@ End Fixed Navigation
                 <h5 class="mt-3">Record number of hours worked</h5>
                 <input type="range" min="1" max="10" step='1' value="1" class="slider" id="myRange" name="hour">
                 <p>Hours worked: <span id="demo"></span></p>
+              </div>
+                
+                <div class="mb-4">
+                <h5>No of products made</h5>
+                <input type="number" name="nop" required />
               </div>
 
               <div>
@@ -333,3 +362,4 @@ End Fixed Navigation
 
   </body>
   </html>
+
