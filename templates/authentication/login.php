@@ -5,11 +5,6 @@
         ?>
         <title>Login</title>
 
-        <style>
-            .dim {
-                width: 70%;
-            }
-        </style>
     </head>
     <body>
         <?php
@@ -40,7 +35,12 @@
                                 // including session section
                                 // include('../includes/session.php');
                                 set_sess($mobile);
-                                header("Location: ../task/task.php");
+
+                                if($fetch_query['position']){
+                                    header("Location: ../task/task.php");
+                                } else {
+                                    header("Location: ../task/task.php");
+                                }
                                 // echo '<script>window.location.replace("http://www.w3schools.com");</script>';
                             }
                         }
