@@ -33,3 +33,26 @@ Name- Varun V
 
 Email- varun.vazhapully@gmail.com
 
+
+## Solution
+
+inside /templates
+
+common css,js,images and plugins for all files
+
+
+
+1. Women workers:
+
+/task: contains the code for viewing the assigned tasks and update their progress, add images of work done, view time remaining, chat with umeed
+      
+/learning: conains the code for viewing attendance. She can also update her attendance and upload the homework
+
+/compensation: contains the graphs for a woman's performance task wise and her skill's rating and compensation amount
+
+* Efficiency is calculated by the number of satisfactory days spent on the work/ expected number of days to complete the task. It is also dependent on the final quality of the product and whether the project went over budget(wasted raw materials) Accordingly cost variance and scheduled variance can determine the efficiency
+Oncce the woman updates her timesheet and picture of the work, the manager can accept or rejecct based on the quality of the product produced. If it is below the level 1 quality check benchmark, the manager can reject it. 
+
+
+2.
+
