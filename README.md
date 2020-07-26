@@ -54,5 +54,5 @@ common css,js,images and plugins for all files
 Oncce the woman updates her timesheet and picture of the work, the manager can accept or rejecct based on the quality of the product produced. If it is below the level 1 quality check benchmark, the manager can reject it. 
 
 
-2.
+2.Managers portal covers all the relevant aspect of the NGOs that too benefitting the women workers , NGO,  team Managers, clients of the NGO all together. The participant portal works as the back bone for the Managers portal . All the daily progress get updated in the Admin Panel for each individual employee, thus getting the complete picture of the on going orders. For the future orders we have the backend that store the available free employees and can assign them the tasks. We are also having a statistics page which is for the Admin to track the top contributers, the top zones that have the consistent performance , as well as the managing the NGO's goal on women engagement so on. In a nutshell admin portal provides the analytics on the collected data. And provide a platform for the distribution of the future orders.
 
