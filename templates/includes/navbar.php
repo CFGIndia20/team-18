@@ -19,7 +19,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent" style="flex-grow: 0">
             <ul class="navbar-nav mr-auto">
                 <?php
-                    include('../includes/session.php');
+//                    include('../includes/session.php');
                     if(isset($_SESSION['id'])){
                 ?>
                         <!-- <li class="nav-item dropdown">
