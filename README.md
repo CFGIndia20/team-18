@@ -55,3 +55,5 @@ Oncce the woman updates her timesheet and picture of the work, the manager can a
 
 
 2.Managers portal covers all the relevant aspect of the NGOs that too benefitting the women workers , NGO,  team Managers, clients of the NGO all together. From the  participant portal works data regarding the  daily progress get updated in the Admin Panel for each individual employee, thus getting the complete picture of the on going orders. For the future orders we have the backend that store the available free employees and can assign them the tasks. We are also having a statistics page which is for the Admin to track analytics of the collected data.
+
+##### The code ("Code") in this repository was created solely by the student teams during a coding competition hosted by JPMorgan Chase Bank, N.A. ("JPMC").						JPMC did not create or contribute to the development of the Code.  This Code is provided AS IS and JPMC makes no warranty of any kind, express or implied, as to the Code,						including but not limited to, merchantability, satisfactory quality, non-infringement, title or fitness for a particular purpose or use.
